@@ -1,0 +1,235 @@
+.navbar {
+  opacity: 0.8;
+  color:;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  line-height: 40px;
+}
+
+
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  vertical-align: top;
+}
+
+.navbar-nav li {
+  float: none;
+  display: inline-block;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #808080;
+  height: 3.5px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* For every section */
+ .block {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+  /*background-color: #fff;
+  height: 500px;
+  width: 100%;
+  top: 0px;
+  margin: 0;
+  padding-top: 60px;
+  z-index: -2;
+  margin-bottom: 20px;
+  position: relative;
+  box-sizing: border-box;*/
+ }
+
+
+
+/* Header Section */
+ #overlay1 {
+  background: #FFF;
+  position: absolute;
+  opacity: 0.6;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+ #header-background{
+  background-image: url(img/nyc.jpg);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: fixed;
+  min-height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: -1;
+ }
+
+.title {
+  position:absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.title h1{
+  position: absolute;
+  top: 200px;
+  right: 0px;
+  bottom: 0;
+  left: 300px;
+  color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  line-height: 40px;
+}
+
+.title p{
+  position: absolute;
+  top: 270px;
+  right: 0px;
+  bottom: 0;
+  left: 300px;
+  color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  line-height: 40px;
+}
+
+.social-media-icons{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-weight: 100;
+}
+
+#social-list{
+  position: absolute;
+  top: 350px;
+  left: 545px;
+}
+
+a {
+  color: grey;
+}
+
+/* about section */
+
+#overlay2 {
+  background: #FFF;
+  position: absolute;
+  opacity: 0.6;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#about-background{
+  background-image: url(img/background.jpg);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  min-height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: 0;
+}
+
+/* skills */
+#overlay3 {
+  background: #FFF;
+  position: absolute;
+  opacity: 0.7;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#skills-background{
+  background-image: url(img/skills.jpg);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  min-height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: 0;
+}
+
+/* projects section */
+
+ #overlay4 {
+  background: #FFF;
+  position: absolute;
+  opacity: 0.7;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#projects-background{
+  background-image: url(img/backgroun2.jpg);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  min-height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: 0;
+}
+
