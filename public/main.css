@@ -1,6 +1,5 @@
 .navbar {
-  opacity: 0.8;
-  color:;
+  opacity: 0.7;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -80,10 +79,11 @@
 
 
 /* Header Section */
+
  #overlay1 {
-  background: #FFF;
+  background: grey;
   position: absolute;
-  opacity: 0.6;
+  opacity: 0.7;
   top: 0;
   right: 0;
   bottom: 0;
@@ -113,60 +113,62 @@
 }
 
 .title h1{
-  position: absolute;
-  top: 200px;
-  right: 0px;
-  bottom: 0;
-  left: 300px;
-  color: black;
+  padding-top: 2em;
+  text-align: center;
+  color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 45px;
+  font-size: 6em;
   font-style: normal;
   font-variant: normal;
   font-weight: 100;
-  line-height: 40px;
+  line-height: 1.5em;
 }
 
 .title p{
-  position: absolute;
-  top: 270px;
-  right: 0px;
-  bottom: 0;
-  left: 300px;
-  color: black;
+  text-align: center;
+  color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 40px;
+  font-size: 2.3em;
   font-style: normal;
   font-variant: normal;
   font-weight: 100;
-  line-height: 40px;
+  line-height: 1em;
 }
 
 .social-media-icons{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  padding: 2%;
+  height: 20%;
   font-weight: 100;
-}
-
-#social-list{
-  position: absolute;
-  top: 350px;
-  left: 545px;
+  text-align: center;
 }
 
 a {
-  color: grey;
+  color: white;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
 }
 
 /* about section */
 
 #overlay2 {
-  background: #FFF;
+  background: grey;
   position: absolute;
-  opacity: 0.6;
+  opacity: 0.85;
   top: 0;
   right: 0;
   bottom: 0;
@@ -181,13 +183,44 @@ a {
   position: absolute;
   min-height: 100vh;
   width: 100vw;
-  top: 0;
   z-index: 0;
 }
 
+
+#about-header{
+  color: #FFF;
+  padding-top:1.8em;
+  padding-bottom: 0.7em;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  text-align: center;
+  line-height: 35px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.about{
+  color: #FFF;
+  text-align: center;
+  padding: 0.5em 13em 0em 13em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  text-align: center;
+  line-height: 35px;
+}
+
+
+
+
 /* skills */
 #overlay3 {
-  background: #FFF;
+  background: grey;
   position: absolute;
   opacity: 0.7;
   top: 0;
@@ -206,6 +239,59 @@ a {
   width: 100vw;
   top: 0;
   z-index: 0;
+}
+
+#skills-header{
+  color: #FFF;
+  padding-top: 1.8em;
+  padding-bottom: 0.7em;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  text-align: center;
+  line-height: 35px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#list-skills{
+
+}
+
+.level-header{
+  color: #FFF;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  text-align: center;
+  line-height: 40px;
+}
+
+#proficient{
+  padding-top: 1.5em;
+  padding-left: 3em;
+}
+
+.skills-technologies{
+  width: 25em;
+}
+
+.skills-technologies li{
+  color: #FFF;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  line-height: 33px;
+  float: left;
+  width: 50%;
 }
 
 /* projects section */
