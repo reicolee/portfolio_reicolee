@@ -122,7 +122,7 @@
 
           <p class='about'>When I'm not coding, you'll find me golfing in the outdoor, playing FIFA17 Season, and savoring ice cream on the sidewalk.</p>
 
-          <p class="text-center" id='resume'><a class="btn download" href="#"><i class="fa fa-download"></i> Download Resume</a></p>
+          <p class="text-center" id='resume'><a class="btn download" target="_blank" href="https://drive.google.com/file/d/0B5gx73SsS7OFQ0Jha3ktY1Z1OWM/view?usp=sharing"><i class="fa fa-arrow-circle-o-right"></i> View Resume</a></p>
 
         </div>
       </div>
@@ -189,7 +189,7 @@
         <div class="col-sm-4">
           <div class="portfolio-item">
             <div class="hover-bg">
-              <a href="#portfolioModal1" id="portfolio1"class="portfolio-link" data-toggle="modal">
+              <a id="portfolio1" class="portfolio-link">
                 <div class="hover-text">
                   <h4>3D TRON</h4>
                   <small>Web Application (Game)</small>
@@ -198,6 +198,23 @@
               </a>
             </div>
           </div>
+          <div class='project-social-media-icons'>
+            <ul class='list-inline' id='project-social-list'>
+              <li>
+                <a href="https://github.com/bzurkow/3D_Tron" target="_blank" class="btn">
+                <i class="fa fa-github-square" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="3d-tron.com" target="_blank" class="btn">
+                <i class="fa fa-link" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://youtu.be/YEaShoQSwhQ" target="_blank" class="btn">
+                <i class="fa fa-youtube-play"></i></a>
+              </li>
+            </ul>
+          </div>
+
         </div>
 
         <div class="col-sm-4">
@@ -212,6 +229,19 @@
             </a>
            </div>
           </div>
+          <div class='project-social-media-icons'>
+            <ul class='list-inline' id='project-social-list'>
+              <li>
+                <a href="https://github.com/reicolee/MummyApocalypse" target="_blank" class="btn">
+                <i class="fa fa-github-square" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://youtu.be/mocT3G-0_ec" target="_blank" class="btn">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+
         </div>
 
         <div class="col-sm-4">
@@ -226,6 +256,19 @@
               </a>
             </div>
           </div>
+          <div class='project-social-media-icons'>
+            <ul class='list-inline' id='project-social-list'>
+              <li>
+                <a href="https://github.com/STEM-Toyz/STEM-Toyz" target="_blank" class="btn">
+                <i class="fa fa-github-square" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://infinite-reef-74515.herokuapp.com/products" target="_blank" class="btn">
+                <i class="fa fa-link" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+
         </div>
        </div>
       </div>
@@ -254,6 +297,7 @@
     </div>
     <div class="col-md-8 col-md-offset-2">
       <h3>Shoot me a message</h3>
+
       <form name="sentMessage" id="contactForm" novalidate>
         <div class="row">
           <div class="col-md-6">
@@ -274,8 +318,9 @@
           <p class="help-block text-danger"></p>
         </div>
         <div id="success"></div>
-        <button type="submit" class="btn send">Send Message</button>
+        <button type="submit" id='submit' class="btn send">Send Message</button>
       </form>
+      <span id="remind"></span>
     </div>
   </div>
 </div>
@@ -288,25 +333,8 @@
 </div>
 
 
-<!---Modal-->
-<div id="portfolioModal1" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-   <div class="modal-header">
-    <span class="close">&times;</span>
-    <h2>Modal Header</h2>
-  </div>
-  <div class="modal-body">
-    <p>Some text in the Modal Body</p>
-    <p>Some other text...</p>
-  </div>
-  <div class="modal-footer">
-    <h3>Modal Footer</h3>
-  </div>
-</div>
-
-
+  <script src="js/j_query.js"></script>
 
   </body>
 </html>
