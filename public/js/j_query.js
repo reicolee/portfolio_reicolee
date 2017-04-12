@@ -5,7 +5,7 @@ $(document).ready(function() {
         subject = $("#subject").val();
         text = $("#form-content").val();
         $("#message").text("Sending E-mail...Please wait");
-        $.get('https://blooming-tundra-49013.herokuapp.com/send', {
+        $.get('https://reicolee.herokuapp.com/send', {
             from: from,
             subject: subject,
             text: text
