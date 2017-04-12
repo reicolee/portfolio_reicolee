@@ -4,6 +4,7 @@ const http = require('http');
 const server = http.createServer();
 const express = require('express');
 const nodemailer = require('nodemailer');
+const smtpTransport = require('nodemailer-smtp-transport');
 const volleyball = require('volleyball');
 const bodyParser = require('body-parser');
 const favicon = require('serve-favicon');
@@ -11,13 +12,13 @@ const app = express();
 
 server.on('request', app);
 
-let transporter = nodemailer.createTransport({
+let transporter = nodemailer.createTransport(smtpTransport({
     service: 'gmail',
     auth: {
         user: 'leereico@gmail.com',
         pass: 'andypam94361050'
     }
-});
+}));
 
 app.use(volleyball);
 app.use(bodyParser.urlencoded({
