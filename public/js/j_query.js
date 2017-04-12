@@ -5,7 +5,7 @@ $(document).ready(function() {
         subject = $("#subject").val();
         text = $("#form-content").val();
         $("#message").text("Sending E-mail...Please wait");
-        $.get('http://localhost:8080/send', {
+        $.get('https://blooming-tundra-49013.herokuapp.com/send', {
             from: from,
             subject: subject,
             text: text
